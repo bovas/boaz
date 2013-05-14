@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/SyncMessage" xmlns="http://www.example.org/SyncMessage" elementFormDefault="qualified">
+	<xs:element name="Message" type="MessageType"/>
+	<xs:complexType name="MessageType">
+		<xs:sequence>
+			<xs:element name="Header" type="HeaderType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Body" type="BodyType" minOccurs="1" maxOccurs="1"/>									
+		</xs:sequence>
+		<xs:attribute name="version"></xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="HeaderType">
+		<xs:sequence>
+			<xs:element name="accountid" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="senttime" type="xs:time" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="messageid" type="xs:string" minOccurs="1" maxOccurs="1"/>			
+		</xs:sequence>
+	</xs:complexType>	
+	<xs:complexType name="BodyType">
+		<xs:sequence>
+		</xs:sequence>
+	</xs:complexType>	
+</xs:schema>

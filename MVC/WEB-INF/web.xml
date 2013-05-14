@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+                         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	
+	<context-param>
+		<param-name>App Vendor</param-name>
+		<param-value>Bovas</param-value>
+		<description>Application vendor</description>
+	</context-param>
+	
+	<filter>
+		<filter-name>AuthenticateFilter</filter-name>
+		<filter-class>com.mycare.actions.filters.AuthenticationFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>AuthenticateFilter</filter-name>
+		<url-pattern>/</url-pattern>
+	</filter-mapping>
+	
+	<listener>
+		<listener-class>com.mycare.actions.filters.ContextListeners</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.mycare.actions.filters.SesstionListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.mycare.actions.servlet_test.LoginServlet</servlet-class>
+		<init-param>
+			<param-name>ServletVendor</param-name>
+			<param-value>BovasOne</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>SendMail</servlet-name>
+		<servlet-class>com.mycare.actions.utils.SendMailServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TestAjaxAction</servlet-name>
+		<servlet-class>com.mycare.actions.servlet_test.TestAjaxAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetServlet</servlet-name>
+		<servlet-class>com.mycare.actions.servlet_test.GetServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>Startup</servlet-name>
+		<servlet-class>com.mycare.actions.servlet_test.StartupServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>GenericServlts</servlet-name>
+		<servlet-class>com.mycare.actions.servlet_test.GenericServlts</servlet-class>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>WelcomeJsp</servlet-name>
+		<jsp-file>/jsp/JspTestjsp</jsp-file>				
+	</servlet>						
+	
+	<servlet-mapping>
+		<servlet-name>SendMail</servlet-name>
+		<url-pattern>/SendMail</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginValidation</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestAjaxAction</servlet-name>
+		<url-pattern>/TestAjaxAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetServlet</servlet-name>
+		<url-pattern>/GetServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GenericServlts</servlet-name>
+		<url-pattern>/GenericServlts</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WelcomeJsp</servlet-name>
+		<url-pattern>/Welcome</url-pattern>
+	</servlet-mapping>
+	
+	<error-page>
+		<error-code>401</error-code>
+		<location>/jsp/NotAuthenicated.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/jsp/ErrorTestingPage.jsp</location>
+	</error-page>	
+</web-app>

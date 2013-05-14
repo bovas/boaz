@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//WEB-INF/src/DefaultNamespace/DatabaseConn.java=UTF-8
+encoding//WEB-INF/src/com/glaceemr/erxin/axis/AdvanceERxService_jws/AdvanceERxService.java=UTF-8
+encoding//WEB-INF/src/com/glaceemr/erxin/axis/AdvanceERxService_jws/AdvanceERxServiceService.java=UTF-8
+encoding//WEB-INF/src/com/glaceemr/erxin/axis/AdvanceERxService_jws/AdvanceERxServiceServiceLocator.java=UTF-8
+encoding//WEB-INF/src/com/glaceemr/erxin/axis/AdvanceERxService_jws/AdvanceERxServiceSoapBindingStub.java=UTF-8
+encoding//WEB-INF/src/com/glaceemr/erxin/axis/DirectoryService_jws/DirectoryService.java=UTF-8
+encoding//WEB-INF/src/com/glaceemr/erxin/axis/DirectoryService_jws/DirectoryServiceService.java=UTF-8
+encoding//WEB-INF/src/com/glaceemr/erxin/axis/DirectoryService_jws/DirectoryServiceServiceLocator.java=UTF-8
+encoding//WEB-INF/src/com/glaceemr/erxin/axis/DirectoryService_jws/DirectoryServiceSoapBindingStub.java=UTF-8
+encoding//WEB-INF/src/localhost/axis/EchoHeaders_jws/EchoHeaders.java=UTF-8
+encoding//WEB-INF/src/localhost/axis/EchoHeaders_jws/EchoHeadersService.java=UTF-8
+encoding//WEB-INF/src/localhost/axis/EchoHeaders_jws/EchoHeadersServiceLocator.java=UTF-8
+encoding//WEB-INF/src/localhost/axis/EchoHeaders_jws/EchoHeadersSoapBindingStub.java=UTF-8
+encoding//WEB-INF/src/org/apache/commons/codec/DecoderException.java=UTF-8
+encoding//WEB-INF/src/org/apache/commons/codec/EncoderException.java=UTF-8
