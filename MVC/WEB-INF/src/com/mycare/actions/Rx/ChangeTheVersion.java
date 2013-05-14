@@ -21,7 +21,7 @@ public class ChangeTheVersion {
 	public static HashMap potentialcodetable =null;
 	public static void main(String[] args) {
 		//File file = new File("/var/backup/Medication_43232_2013-01-05T09-46-36.0Z.XML");
-		File file = new File("/var/backup/Medication_null_43637_2013-01-23T19-10-27.0Z.XML");
+		File file = new File("/var/backup/Medication_null_43637_2013-01-23T19-10-27.0Z.XML ");
 		Document doc = ChangeTheVersion.convertFileToDocument(file);
 		ChangeTheVersion version = new ChangeTheVersion();
 		String result = version.changeTheVersionOfXml(doc);
